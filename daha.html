@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>잠시만 기다려주세요...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ✅ Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s){
+      if(f.fbq)return;n=f.fbq=function(){
+        n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)
+      };
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)
+    }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+    // ✅ 1. Pixel ID를 아래에 정확히 넣으세요
+    fbq('init', '598246472669925'); 
+
+    // ✅ 2. 사용자가 이 페이지에 도달했을 때 ViewContent 이벤트
+    fbq('track', 'ViewContent');
+  </script>
+
+  <!-- Meta 리디렉션: 1.5초 후 Tally 링크로 이동 -->
+  <meta http-equiv="refresh" content="1.5;url=https://tally.so/r/npMNR1" />
+</head>
+
+<body style="font-family: sans-serif; text-align: center; padding-top: 100px;">
+  <h2>설문 페이지로 이동 중입니다...</h2>
+  <p>잠시만 기다려 주세요.</p>
+
+  <!-- ✅ 만약 자동 리디렉션 실패 대비 수동 버튼도 제공 -->
+  <button 
+    onclick="fbq('track', 'Lead'); window.location.href='https://tally.so/r/npMNR1';"
+    style="padding: 12px 24px; font-size: 16px; margin-top: 30px; cursor: pointer;">
+    직접 이동하기
+  </button>
+
+  <!-- 🟡 추후 확인용 Pixel 이미지 (선택 사항) -->
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=598246472669925&ev=PageView&noscript=1"
+  /></noscript>
+</body>
+</html>
